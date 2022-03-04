@@ -4,76 +4,120 @@
     color: #eee;
 }
 
-body {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-img {
-    height: 300px;
-    width:300px;
-    max-width: 400px;
-    max-height: 400px;
-    flex: 1 1 0;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
-    flex:auto;
-}
-
-.linknum1 {
-    margin-left: auto;
-}
-
-a {
-    text-decoration: none;
-    color:#eee;
-}
-
-button {
-    color:black;
-}
+/* header */ 
 
 .header {
     display: flex;
-    flex-flow: column;
     background-color: #1f2937;
+    border: none;
 }
 
-.headertext {
+.all {
     display: flex;
-    flex-flow: column wrap;
-    margin: 0 20px 0 0;
+    flex-flow: column;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    border: 2px yellowgreen solid;
+    border: none;
 }
 
 .navbar {
     display: flex;
-    padding: 20px 10px;
-    background-color: #1f2937;
-
-    margin-bottom: auto;
-    width: auto;
-
+    flex: auto;
+    border: none;
 }
 
-.nemtom {
+.pic {
+    height: 200px;
+    width: 300px;
+    background-color: rgb(19, 202, 202);
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 20px 20px;
+    margin: 20px 0;
     flex: auto;
+    border: 2px rgb(19, 202, 202) solid;
+    border-radius: 8px;
 }
 
-.all {
-    display:flex;
-    flex-flow: column;
-    align-content: stretch;
-    align-items: stretch;
-    justify-content: center;
+.pic2 {
+    border: none;
 }
+
+a {
+    text-decoration: none;
+    border: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    gap:20px;
+    flex: auto;
+    border: none;
+}
+
+li {
+    border: none;
+}
+
+.linknum1 {
+    margin-left: 200px;
+}
+
+.header2 {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.headertext {
+    border: royalblue 2px solid;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin: 0 20px;
+    border: none;
+}
+
+.headercontent {
+    width: 300px;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0px;
+    border: none;
+}
+
+.headerh1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    border: none;
+}
+
+/* header */ 
+/* content1 */
+
+.content1 {
+    text-align: center;
+    color:black;
+    border: 2px purple solid;
+}
+
+.black {
+    color: black;
+}
+
+.button {
+    background-color: #3882f6;
+    border: 2px solid #3882f6;
+    border-radius: 4px;
+}
+
+/* content1 */
