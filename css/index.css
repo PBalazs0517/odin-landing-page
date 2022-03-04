@@ -66,7 +66,7 @@ li {
 }
 
 .linknum1 {
-    margin-left: 200px;
+    margin-left: 190px;
 }
 
 .header2 {
@@ -101,13 +101,18 @@ li {
     border: none;
 }
 
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
 /* header */ 
 /* content1 */
 
 .content1 {
     text-align: center;
     color:black;
-    border: 2px purple solid;
+    border: none;
 }
 
 .black {
@@ -118,6 +123,40 @@ li {
     background-color: #3882f6;
     border: 2px solid #3882f6;
     border-radius: 4px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    border: none;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    border: 2px #3882f6 solid;
+    background-color: #3882f6;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background-color: #eee;
+}
+
+.ccard {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    border: none;
+}
+
+.contentheader {
+    border: none;
+}
+
+.cardtext {
+    border: none;
 }
 
 /* content1 */
