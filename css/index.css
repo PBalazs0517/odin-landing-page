@@ -1,7 +1,10 @@
 * {
-    border: 2px solid red;
     font-family: 'Roboto', sans-serif;
     color: #eee;
+}
+
+body {
+    margin: 0px;
 }
 
 /* header */ 
@@ -9,7 +12,7 @@
 .header {
     display: flex;
     background-color: #1f2937;
-    border: none;
+    padding: 0 0 30px;
 }
 
 .all {
@@ -18,17 +21,16 @@
     flex: auto;
     align-items: center;
     justify-content: center;
-    border: 2px yellowgreen solid;
-    border: none;
 }
 
 .navbar {
     display: flex;
     flex: auto;
-    border: none;
+    margin: 10px 0 0;
 }
 
 .pic {
+    padding: 0px;
     height: 200px;
     width: 300px;
     background-color: rgb(19, 202, 202);
@@ -38,17 +40,17 @@
     justify-content: center;
     margin: 20px 0;
     flex: auto;
-    border: 2px rgb(19, 202, 202) solid;
     border-radius: 8px;
+    background-position: center;
+    background-image: url("/home/balazs/Odin/odin-landing-page/odin-landing-page/img/norway-ge31367deb_640.jpg");
 }
 
 .pic2 {
-    border: none;
+    display: none;
 }
 
 a {
     text-decoration: none;
-    border: none;
 }
 
 ul {
@@ -58,11 +60,6 @@ ul {
     display: flex;
     gap:20px;
     flex: auto;
-    border: none;
-}
-
-li {
-    border: none;
 }
 
 .linknum1 {
@@ -74,31 +71,26 @@ li {
     flex: auto;
     align-items: center;
     justify-content: center;
-    border: none;
 }
 
 .headertext {
-    border: royalblue 2px solid;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     margin: 0 20px;
-    border: none;
 }
 
 .headercontent {
     width: 300px;
     font-weight: 500;
     font-size: 18px;
-    margin: 0px;
-    border: none;
+    margin: 5px 0px;
 }
 
 .headerh1 {
     font-size: 32px;
     margin: 0;
     font-weight: 700;
-    border: none;
 }
 
 .logo {
@@ -112,7 +104,7 @@ li {
 .content1 {
     text-align: center;
     color:black;
-    border: none;
+    padding: 30px 0;
 }
 
 .black {
@@ -127,9 +119,8 @@ li {
 
 .cards {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     justify-content: center;
-    border: none;
 }
 
 .card {
@@ -142,21 +133,126 @@ li {
 
 .card:hover {
     background-color: #eee;
+    animation-name: border;
+    animation-duration: 4s;
+}
+
+@keyframes border {
+    from{border-radius: 8px;}
+    to{border-radius: 360px;}
 }
 
 .ccard {
     display: flex;
     align-items: center;
     flex-flow: column;
-    border: none;
-}
-
-.contentheader {
-    border: none;
-}
-
-.cardtext {
-    border: none;
 }
 
 /* content1 */
+/* content2 */
+
+.content2 {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.content2text {
+    font-weight: lighter;
+    font-size: 24px;
+    color: #1f2937;
+    font-style: italic;
+    margin: 20px 20px 0;
+}
+
+.author {
+    font-weight: 800;
+    align-self: flex-end;
+    color: #1f2937;
+    margin:0px 20px 20px;
+}
+
+.content2con {
+    display: flex;
+    flex-flow: column;
+    max-width: 600px;
+}
+/* content2 */
+/* content3 */
+
+.content3 {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.placeholdercard {
+    max-width: 580px;
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 8px;
+    align-items: center;
+    margin:20px;
+    padding: 20px;
+}
+
+.pcardtxt {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0px 0px 0px 20px
+}
+
+.placeholderinfo {
+    margin: 0 0 5px;
+}
+
+.placeholdertext {
+    margin: 0px;
+}
+
+.button2 {
+    background-color: #3882f6;
+    border-radius: 4px;
+    border: 2px solid #eee;
+    padding: 10px;
+    min-width: 80px;
+    margin: 0 20px 0 10px;
+}
+
+/* content3 */
+/* footer */
+
+.footer {
+    background-color: #1f2937;
+    display: flex;
+    margin: auto 0 0 0;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.footercon {
+    display: flex;
+    justify-content: center;
+    max-width: 580px;
+    min-width: 580px;
+}
+
+.footertxt {
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.gitlink {
+    font-weight: 800;
+    margin: auto 0;
+}
+
+
+.gitlinkdiv {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+/* footer */
